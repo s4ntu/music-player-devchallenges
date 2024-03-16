@@ -85,9 +85,8 @@ body {
     content: '';
     background-color: #C93B76;
         box-shadow: 0px 0px 20px 1px #c93b766c;
-
     position: absolute;
-    width: 0%;
+    width: 60%;
     height: 100%;
 }
 
