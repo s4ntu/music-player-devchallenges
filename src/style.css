@@ -32,6 +32,7 @@ body {
     padding: 32px;
     height: fit-content;
     border-radius: 18px;
+        margin-top: 34px;
 }
 
 .music-player__image {
@@ -48,8 +49,8 @@ body {
 .music-player__title {
     font-size: 16px;
     margin-top: 18px;
-    font-weight: 400;
-    color: #E5E7EB;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .music-player__author {
@@ -83,6 +84,8 @@ body {
 .music-player__progress-bar-progress{
     content: '';
     background-color: #C93B76;
+        box-shadow: 0px 0px 20px 1px #c93b766c;
+
     position: absolute;
     width: 0%;
     height: 100%;
@@ -103,6 +106,8 @@ body {
 .music-player__btn-play-pause {
     background-color: #C93B76;
     border-radius: 100%;
+        box-shadow: 0px 0px 20px 1px #c93b766c;
+
     padding: 6px;
     margin: 0px 16px;
 }
