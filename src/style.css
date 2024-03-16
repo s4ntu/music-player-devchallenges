@@ -29,10 +29,10 @@ body {
     grid-column-end: 9;
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 20px;
     height: fit-content;
     border-radius: 18px;
-        margin-top: 42px;
+        margin-top: 46px;
 }
 
 .music-player__image {
