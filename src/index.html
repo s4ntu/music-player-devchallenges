@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <main class="music-player">
+        <article class="music-player__container">
+            <img class="music-player__image" src="./assets/cover-1.png" id="audio-image" alt="Cancion">
+            <div class="music-player__info">
+                <h1 class="music-player__title" id="title">Lost in the City Lights</h1>
+                <p class="music-player__author"><strong id="author">Cosmo Sheldrake</strong></p>
+            </div>
+            <div class="music-player__controls">
+                <div class="music-player__time">
+                    <time class="music-player__current-time" id="current-time">00:00</time>
+                    <time class="music-player__duration" id="duration-time">3:00</time>
+                </div>
+                <div class="music-player__progress-bar"><div class="music-player__progress-bar-progress" id="progress-bar"></div></div>
+            </div>
+            <div class="music-player__buttons">
+                <button class="music-player__btn-before" onclick="beforeAudio()">
+                    <img src="./assets/Stop_and_play_fill-1.svg" alt="">
+                </button>
+                <button class="music-player__btn-play-pause" onclick="reproduccion()">                    <img src="./assets/Play_fill.svg" alt="">
+                </button>
+                <button onclick="nextAudio()" class="music-player__btn-after">                    <img src="./assets/Stop_and_play_fill.svg" alt="">
+                </button>
+            </div>
+            <audio class="music-player__audio"  id="audio"  src="./assets/lost-in-city-lights-145038.mp3" preload="auto"></audio>
+        </article>
+    </main>
+<script src="index.js"></script>
+</body>
+
+</html>

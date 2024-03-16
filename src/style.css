@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: url('assets/bg.jpg');
+    background-repeat: no-repeat;
+    height: 100lvh; /* Debería ser 100vh */
+    width: 100lvw; /* Debería ser 100vw */
+}
+
+.music-player {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    width: 1280px;
+    padding: 0px 86px;
+    height: 100%;
+    place-content: center;
+}
+
+.music-player__container {
+    font-family: "Inter";
+    background-color: #121826a6;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    height: fit-content;
+    border-radius: 18px;
+}
+
+.music-player__image {
+    border-radius: 16px;
+}
+
+.music-player__info {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-player__title {
+    font-size: 16px;
+    margin-top: 18px;
+    font-weight: 400;
+    color: #E5E7EB;
+}
+
+.music-player__author {
+    color: #4D5562;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 4px;
+}
+
+.music-player__controls {
+    align-self: center;
+    font-size: 10px;
+    color: #4D5562;
+    width: 100%;
+}
+
+.music-player__time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    margin-bottom: 6px;
+}
+
+.music-player__progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #E5E7EB;
+    position: relative;
+}
+
+.music-player__progress-bar-progress{
+    content: '';
+    background-color: #C93B76;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+}
+
+.music-player__buttons {
+    align-self: center;
+}
+
+.music-player__btn-before,
+.music-player__btn-play-pause,
+.music-player__btn-after {
+    background: none;
+    border: none;
+    margin-top: 42px;
+}
+
+.music-player__btn-play-pause {
+    background-color: #C93B76;
+    border-radius: 100%;
+    padding: 6px;
+    margin: 0px 16px;
+}
+
+.music-player__btn-before>img,
+.music-player__btn-play-pause>img,
+.music-player__btn-after>img {
+    height: 38px;
+    width: 38px;
+}
